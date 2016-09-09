@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Пинк: фотографии пользователей</title>
+</head>
+
+<body>
+  <header class="page-header page-header--inner">
+    <a href="index.html">
+      <h1 class="page-header__logo">pink</h1></a>
+    <button class="main-menu__open" type="button" name="button"></button>
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">Фотографии</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">Конкурс</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#">HMTL Academy</a>
+      </li>
+    </ul>
+    <h2 class="page-header__title">Фотографии пользователей</h2>
+  </header>
+  <main>
+    <section class="photo">
+      <p class="photo__slogan">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Анна
+              <span class="item-review__time">(5 минут назад)</span>
+            </h3>
+          <p class="item-review__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">215</span>
+          </p>
+        </div>
+      </article>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/280x180" width="280" height="180">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Левон
+              <span class="item-review__time">(5 часов назад)</span>
+            </h3>
+          <p class="item-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">356</span>
+          </p>
+        </div>
+      </article>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/280x180" width="280" height="180">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Антон
+              <span class="item-review__time">(5 часов назад)</span>
+            </h3>
+          <p class="item-review__text">Соседи будут рады!</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">666</span>
+          </p>
+        </div>
+      </article>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/280x180" width="280" height="180">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Борис
+              <span class="item-review__time">(20 часов назад)</span>
+            </h3>
+          <p class="item-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">215</span>
+          </p>
+        </div>
+      </article>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/280x180" width="280" height="180">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Максим
+              <span class="item-review__time">(40 часов назад)</span>
+            </h3>
+          <p class="item-review__text">Где снег-то?</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">150</span>
+          </p>
+        </div>
+      </article>
+      <article class="photo__item">
+        <div class="photo__item-img">
+          <a href="#">
+            <img src="http://placehold.it/280x180" width="280" height="180">
+          </a>
+        </div>
+        <div class="photo__item-review">
+          <h3 class="item-review__title">Надежда
+              <span class="item-review__time">(45 часов назад)</span>
+            </h3>
+          <p class="item-review__text">Всем GM и взаимные лайки!</p>
+          <p class="item-review__like">
+            <a class="item-review__like-action" href="#">like</a> Нравится: <span class="item-review__like-counter">2560</span>
+          </p>
+        </div>
+      </article>
+    </section>
+    <div class="upload">
+      <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="upload__form" action="index.html" method="post">
+        <div class="form__img">
+          <img src="http://placehold.it/280x374" width="280" height="374">
+        </div>
+        <div class="form__toggles">
+          <label class="form__toggle-crop" for="form-crop"></label>
+          <label class="form__toggle-fill" for="form-fill"></label>
+          <label class="form__toggle-contrast" for="form-contrast"></label>
+        </div>
+        <input class="form__input-crop" type="range" name="crop" id="form-crop" min="0" max="" step="" checked>
+        <input class="form__input-fill" type="range" name="fill" id="form-fill" min="0" max="" step="">
+        <input class="form__input-contrast" type="range" name="contrast" id="form-contrast" min="0" max="" step="">
+        <div class="form__btn">
+          <button class="form__btn-submit" type="submit">Запостить</button>
+          <button class="form__btn-reset" type="reset">Отмена</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__logo">
+      <a href="index.html">pink</a>
+    </p>
+    <p class="page-footer__social">
+      <div class="social">
+        <a class="social__icon  social__icon--twitter" href="#">Twitter</a>
+        <a class="social__icon  social__icon--fb" href="#">Facebook</a>
+        <a class="social__icon  social__icon--youtube" href="#">YouTube</a>
+      </div>
+    </p>
+    <p class="page-footer__copyright">
+      Разработано:
+      <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+    </p>
+  </footer>
+</body>
+
+</html>
