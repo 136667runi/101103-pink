@@ -1,0 +1,33 @@
+.slider {
+  &__input {
+    display: none;
+  }
+
+  &__toggle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 19px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-color: #283645;
+    cursor: pointer;
+  }
+
+  #btn-1:checked ~ &__toggles &__toggle[for="btn-1"],
+  #btn-2:checked ~ &__toggles &__toggle[for="btn-2"],
+  #btn-3:checked ~ &__toggles &__toggle[for="btn-3"] {
+    background-color: white;
+    border: 3px solid #283645;
+    opacity: 1;
+  }
+
+  #price-btn-1:checked ~ &__toggles &__toggle[for="price-btn-1"],
+  #price-btn-2:checked ~ &__toggles &__toggle[for="price-btn-2"],
+  #price-btn-3:checked ~ &__toggles &__toggle[for="price-btn-3"] {
+    background-color: white;
+    border: 3px solid #283645;
+    opacity: 1;
+  }
+}
