@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header  page-header--main">
-    <img class="page-header__logo" src="http://placehold.it/75x22" width="75px" height="22px" alt="Pink">
-    <button class="main-menu__open" type="button" name="button"></button>
+    <div class="page-header__wrapper">
+      <img class="page-header__logo" src="http://placehold.it/75x22" width="75px" height="22px" alt="Pink">
+      <button class="page-header__menu-open" type="button" name="button"></button>
+    </div>
     <ul class="main-menu">
       <li class="main-menu__item">
         <a>Главная</a>
@@ -31,7 +36,7 @@
       <a class="apps__icon-ios" href="#">Скачать в App Store</a>
       <a class="apps__icon-android" href="#">Скачать в Google Play</a>
       <a class="apps__icon-wp" href="#">Скачать в WP Store</a>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
     <section class="info">
       <div class="info__slogan">
@@ -50,16 +55,16 @@
         <h3 class="info__title">Заводит новых друзей</h3>
         <p class="info__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
-      <img class="info__logo" src="http://placehold.it/157x300" width="" height="">
+      <img class="info__logo" src="img/iphone-screen-mobile@1x.png" width="157" height="320">
     </section>
     <section class="review slider">
-      <input class="slider__input" type="radio" name="review" id="review-btn-1" checked>
-      <input class="slider__input" type="radio" name="review" id="review-btn-2">
-      <input class="slider__input" type="radio" name="review" id="review-btn-3">
+      <input class="slider__input" type="radio" name="review" id="btn-1" checked>
+      <input class="slider__input" type="radio" name="review" id="btn-2">
+      <input class="slider__input" type="radio" name="review" id="btn-3">
       <div class="review__toggles slider__toggles">
-        <label class="slider__toggle" for="review-btn-1"></label>
-        <label class="slider__toggle" for="review-btn-2"></label>
-        <label class="slider__toggle" for="review-btn-3"></label>
+        <label class="slider__toggle" for="btn-1"></label>
+        <label class="slider__toggle" for="btn-2"></label>
+        <label class="slider__toggle" for="btn-3"></label>
       </div>
       <div class="review__slides">
         <div class="review__slide">
@@ -67,42 +72,45 @@
           <p class="review__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
         <div class="review__slide">
-          <h3 class="review__slide-title">Николай Петров</h3>
+          <h3 class="review__slide-title">Николай Петров, слайд 2</h3>
           <p class="review__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
         <div class="review__slide">
-          <h3 class="review__slide-title">Николай Петров</h3>
+          <h3 class="review__slide-title">Николай Петров, слайд 3</h3>
           <p class="review__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
       </div>
     </section>
     <section class="price slider">
       <input class="slider__input" type="radio" name="price" id="price-btn-1">
-      <input class="slider__input" type="radio" name="price" id="price-btn-2">
+      <input class="slider__input" type="radio" name="price" id="price-btn-2" checked>
       <input class="slider__input" type="radio" name="price" id="price-btn-3">
-      <div class="price__toggles slider__toogles">
+      <div class="price__toggles slider__toggles">
         <label class="slider__toggle" for="price-btn-1"></label>
         <label class="slider__toggle" for="price-btn-2"></label>
         <label class="slider__toggle" for="price-btn-3"></label>
       </div>
       <div class="price__slides">
         <div class="price__slide">
-          <h3 class="price__slide-title">Стандарт</h3>
-          <span class="price__slide-price">3,99 USD</span>
+          <h3 class="price__slide-title">Стандарт
+            <span class="price__slide-price">3,99 USD</span>
+          </h3>
           <p class="price__slide-text price__slide-text--include">Розовый фильтр</p>
           <p class="price__slide-text price__slide-text--include">Смайлики</p>
           <p class="price__slide-text price__slide-text--not-include">Комментарии</p>
         </div>
         <div class="price__slide">
-          <h3 class="price__slide-title">Стандарт</h3>
-          <span class="price__slide-price">3,99 USD</span>
+          <h3 class="price__slide-title">Стандарт2
+            <span class="price__slide-price">3,99 USD</span>
+          </h3>
           <p class="price__slide-text price__slide-text--include">Розовый фильтр</p>
           <p class="price__slide-text price__slide-text--include">Смайлики</p>
           <p class="price__slide-text price__slide-text--not-include">Комментарии</p>
         </div>
         <div class="price__slide">
-          <h3 class="price__slide-title">Стандарт</h3>
-          <span class="price__slide-price">3,99 USD</span>
+          <h3 class="price__slide-title">Стандарт3
+            <span class="price__slide-price">3,99 USD</span>
+          </h3>
           <p class="price__slide-text price__slide-text--include">Розовый фильтр</p>
           <p class="price__slide-text price__slide-text--include">Смайлики</p>
           <p class="price__slide-text price__slide-text--not-include">Комментарии</p>
@@ -115,14 +123,15 @@
       <h2 class="page-footer__contacts-title">Остались вопросы? Свяжитесь с нами!</h2>
       <p class="page-footer__contacts-text">
         Звоните:<br>
-        <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="page-footer__a-red" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </p>
       <p class="page-footer__contacts-text">
         Пишите:<br>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="page-footer__a-red" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="page-footer__contacts-text">
-        Приезжайте в гости:<br> ул. Большая Конюшенная, 19/8
+        Приезжайте в гости:<br>
+        <a class="page-footer__a-red">ул. Большая Конюшенная, 19/8</a>
       </p>
     </div>
     <div class="page-footer__map">

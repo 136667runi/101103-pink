@@ -1,0 +1,44 @@
+.form {
+  background-color: @form-bg;
+
+  &__img {
+    vertical-align: top;
+    width: 280px;
+    height: 374px;
+  }
+
+  &__btn {
+    border-top: 1px solid #dddfe1;
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  &__btn-submit {
+    display: block;
+    width: 280px;
+    padding: 0;
+    margin-bottom: 11px;
+    background-color: @form-submit-bg;
+    border: 3px solid @form-submit-color;
+    border-radius: 30px;
+    color: @form-submit-color;
+    font-size: @form-submit-fs;
+    line-height: 49px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__btn-reset {
+    display: block;
+    width: 280px;
+    padding: 0;
+    border: 3px solid @form-reset-color;
+    border-radius: 30px;
+    color: @form-reset-color;
+    font-size: @form-reset-fs;
+    line-height: 49px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.1;
+  }
+}
