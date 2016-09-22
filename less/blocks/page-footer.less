@@ -1,47 +1,33 @@
 .page-footer {
+  display: none;
+}
 
-  &__contacts {
-    padding-top: 47px;
-    padding-bottom: 40px;
-    text-align: center;
+@media @tablet-widths {
+  .page-footer {
+    .container();
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__contacts-title {
-    margin: 0;
-  }
-
-  &__contacts-text {
-    font-size: 1.286em;
-    font-weight: 700;
-  }
-
-  &__a-red {
-    font-size: 24px;
-    font-weight: 300;
-    color: #d22856;
-  }
-
-  &__map {
-    min-height: 150px;
-    background: #f3f1ea url("../img/bg-map-mobile@1x.png") no-repeat;
-  }
-
-  &__logo a {
-    display: block;
-    margin: 40px 85px;
-  }
-
-  &__copyright {
+  .page-footer__item:nth-of-type(3) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
     display: inline-block;
     vertical-align: middle;
-    margin-top: 39px;
-    margin-bottom: 0;
-    line-height: 18px;
-  }
 
-  &__copyright-link {
-      display: inline-block;
-      vertical-align: middle;
+     p {
+       margin: 0;
+     }
+
+     a {
       font-size: 0;
-    }
+      width: 27px;
+      height: 34px;
+      background-color: gray;
+     }
+  }
 }

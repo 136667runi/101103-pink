@@ -1,0 +1,29 @@
+.effect {
+  display: none;
+}
+
+@media @tablet-widths {
+  .effect {
+    display: block;
+  }
+  .effect__wrapper {
+    .container();
+    .outline();
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    box-sizing: border-box;
+  }
+  .effect__text {
+    width: 310px;
+  }
+}
+
+@media @desktop-widths {
+  .effect__wrapper {
+    padding-left: 360px;
+  }
+  .effect__text {
+    width: 550px;
+  }
+}
