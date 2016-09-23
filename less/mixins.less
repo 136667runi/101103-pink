@@ -23,3 +23,21 @@
     width: 940px;
   }
 }
+
+.label(@font-size, @font-color, @padding, @width: 10px, @height: 10px) {
+  display: block;
+  position: relative;
+  font-size: @font-size;
+  color: @font-color;
+  cursor: pointer;
+  padding-left: @padding;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: @width;
+    height: @height;
+  }
+}
