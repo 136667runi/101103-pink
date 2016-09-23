@@ -1,0 +1,94 @@
+.user-review {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  line-height: 24px;
+  width: 280px;
+  padding-left: 17px;
+
+  & p {
+    margin: 0;
+  }
+
+  &--panorama {
+    margin: 0 auto;
+  }
+}
+
+.user-review__title {
+  margin: 0;
+  padding-top: 20px;
+  font-size: @body-font-size - 4;
+}
+
+.user-review__time {
+  font-size: @body-font-size - 6;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-review__text {
+  padding-bottom: 15px;
+}
+
+.user-review__like {
+  padding-bottom: 23px;
+  color: #d22856;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.user-review__like-action {
+  font-size: 0;
+  width: 13px;
+  height: 12px;
+  display: block;
+  cursor: pointer;
+  background: url("../img/icon-heart.svg") no-repeat 50% 50%;
+  margin-right: 18px;
+  align-self: center;
+}
+
+.user-review__like-counter {
+  margin-left: 3px;
+}
+
+@media @tablet-widths {
+  .user-review {
+    width: 300px;
+    font-size: 14px;
+    padding: 0 27px;
+
+    &--panorama {
+      width: 620px;
+      position: relative;
+    }
+  }
+
+  .user-review__like {
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      order: -1;
+    }
+
+    &--panorama {
+      position: absolute;
+      top: 15px;
+      right: 0;
+
+      .user-review__like-action {
+        margin-left: 17px;
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+  .user-review {
+    &--panorama {
+      width: 940px;
+    }
+  }
+}

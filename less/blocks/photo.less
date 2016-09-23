@@ -1,0 +1,48 @@
+.photo__item {
+  margin-bottom: 20px;
+  .outline();
+}
+
+.photo__slogan {
+  display: block;
+  width: 245px;
+  margin: 0 auto;
+  padding: 46px 0;
+  text-align: center;
+}
+
+.photo__item-img img {
+  vertical-align: top;
+}
+
+.photo__item-img {
+  &--panorama img {
+    width: 100%;
+  }
+}
+
+.photo-item__wrapper {
+  .container();
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media @tablet-widths {
+  .photo__slogan {
+    width: 450px;
+    padding-top: 92px;
+    padding-bottom: 72px;
+  }
+  .photo-item__wrapper {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop-widths {
+  .photo__slogan {
+    width: 580px;
+  }
+}
