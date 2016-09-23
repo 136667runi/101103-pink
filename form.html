@@ -46,21 +46,27 @@
       <p class="form-contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="form-contest__slogan--hidden">Пожалуйста, заполните форму ниже:</span>
       </p>
-      <fieldset class="form-contest__field  form-contest__field--name">
-        <div class="form-contest__field-wrapper">
-          <label class="form-contest__title" for="surname">Фамилия:</label>
-          <input type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
 
-          <label class="form-contest__title" for="name">Имя:</label>
-          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--name">
+        <fieldset class="form-contest__field  form-contest__field--name">
+          <div>
+            <label class="form-contest__title" for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
+          </div>
+          <div>
+            <label class="form-contest__title" for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+          </div>
+          <div>
+            <label class="form-contest__title" for="second-name">Отчество:</label>
+            <input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+      </div>
 
-          <label class="form-contest__title" for="second-name">Отчество:</label>
-          <input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже">
-        </div>
-      </fieldset>
-      <fieldset class="form-contest__field  form-contest__field--achievements">
-        <div class="form-contest__field-wrapper">
-          <legend class="form-contest__title  form-contest__title--achievements">Ваши безбашенные достижения в путешествии</legend>
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--achievements">
+        <fieldset class="form-contest__field  form-contest__field--achievements">
+          <legend class="form-contest__title  form-contest__title--achievements">Ваши безбашенные<br> достижения в путешествии</legend>
 
           <input type="checkbox" name="achievements" id="checkbox-item-1" value="Сделал селфи с акулой">
           <label class="form-contest__control  form-contest__control--checkbox" for="checkbox-item-1">Сделал селфи с акулой</label>
@@ -79,19 +85,25 @@
 
           <input type="checkbox" name="achievements" id="checkbox-item-6" value="Разгромил отель">
           <label class="form-contest__control  form-contest__control--checkbox" for="checkbox-item-6">Разгромил отель</label>
-        </div>
-      </fieldset>
-      <fieldset class="form-contest__field  form-contest__field--phone">
-        <div class="form-contest__field-wrapper">
-          <label class="form-contest__title" for="phone">Номерок телефончика</label>
-          <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required="">
+        </fieldset>
+      </div>
 
-          <label class="form-contest__title" for="email">адресок почты</label>
-          <input type="email" id="email" name="email" placeholder="Введите почту" required="">
-        </div>
-      </fieldset>
-      <fieldset class="form-contest__field  form-contest__field--apps">
-        <div class="form-contest__field-wrapper">
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--phone">
+        <fieldset class="form-contest__field  form-contest__field--phone">
+          <legend class="form-contest__title  form-contest__title--hide">Контактная информация</legend>
+          <div>
+            <label class="form-contest__title  form-contest__title--phone" for="phone">Номерок телефончика</label>
+            <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required="">
+          </div>
+          <div>
+            <label class="form-contest__title" for="email">адресок почты</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту" required="">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--apps">
+        <fieldset class="form-contest__field  form-contest__field--apps">
           <legend class="form-contest__title  form-contest__title--apps">С каким приложением путешествовали?</legend>
 
           <input type="radio" id="radio-item-1" name="apps" value="Pink для iOS">
@@ -102,15 +114,17 @@
 
           <input type="radio" id="radio-item-3" name="apps" value="Windows Phone">
           <label class="form-contest__control  form-contest__control--radio" for="radio-item-3">Windows Phone</label>
-        </div>
-      </fieldset>
-      <fieldset class="form-contest__field  form-contest__field--write">
-        <div class="form-contest__field-wrapper">
-          <label class="form-contest__title  form-contest__title--apps" for="comment">Опишите свои эмоции</label>
+        </fieldset>
+      </div>
+
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--write">
+        <fieldset class="form-contest__field  form-contest__field--write">
+          <legend class="form-contest__title  form-contest__title--write" for="comment">Опишите свои эмоции</legend>
           <textarea class="form-contest__comment" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-      </fieldset>
-      <div class="form-contest__field-wrapper">
+        </fieldset>
+      </div>
+
+      <div class="form-contest__field-wrapper  form-contest__field-wrapper--button">
         <button class="form-contest__button" type="submit">Отправить</button>
         <p class="form-contest__doc"><span>*</span> — обязательные поля</p>
       </div>
