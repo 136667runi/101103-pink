@@ -1,6 +1,6 @@
 .page-header {
     position: relative;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,34 +8,48 @@
     &--main {
       min-height: 462px;
       padding-bottom: 271px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 10% 39.5%,
+                  url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
     }
 }
 
 .page-header__logo {
   .container();
+  box-sizing: border-box;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 13px;
+  padding: 20px 20px 7px;
 }
 
-.page-header__menu-open {
+.page-header__menu {
+  width: 50px;
+  height: 24px;
+  background: url("../img/icon-menu-burger.svg") no-repeat;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+
+  &--open {
+    background: url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
+  }
 }
 
 .page-header__nav {
   background-color: rgba(0, 0, 0, 0.3);
+
+  &--menu-open {
+    background-color: #283645;
+    position: absolute;
+    width: 100%;
+    top: -309px;
+  }
 }
 
 .page-header__apps {
-  .container();
-  width: 320px;
-  height: 271px;
-  margin: 0 auto;
+  background-color: #1d2631;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -53,11 +67,26 @@
 }
 
 @media @tablet-widths {
+
   .page-header--main {
     min-height: 729px;
     padding: 0;
+    background: url("../img/iphone-hand-tablet.png") no-repeat 50% 100%,
+                url("../img/bg-tablet.jpg") no-repeat 50% 0;
+    background-size: auto, 100% 100%;
     justify-content: flex-start;
   }
+
+  .page-header__nav {
+    &--menu-open {
+      top: -320px;
+    }
+  }
+
+  .page-header__logo {
+    padding: 30px 0 43px;
+  }
+
   .page-header__title {
     font-size: 50px;
     line-height: 55px;
@@ -68,25 +97,59 @@
   .page-header__apps  {
     position: static;
     transform: none;
-    margin-top: 100px;
+    background-color: transparent;
+    .container();
+    margin-top: 97px;
+
+    &--menu-open {
+      position: relative;
+      left: 0;
+      bottom: 112px;
+    }
   }
 }
 
 @media @desktop-widths {
-  .page-header__menu-open {
+
+  .page-header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__menu {
     display: none;
   }
+
+  .page-header {
+
+    &--main {
+      min-height: 853px;
+      background: url("../img/iphone-hand-desktop.png") no-repeat 95% 100%,
+                  url("../img/bg-desktop.jpg") no-repeat 50% 0;
+    }
+  }
+
   .page-header__logo {
     width: 150px;
     margin: 0;
+    padding: 0;
   }
+
   .page-header__wrapper {
     .container();
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 22px;
   }
+
   .page-header__title {
     padding-top: 72px;
     padding-bottom: 110px;
+  }
+
+  .page-header__apps {
+    margin-top: 110px;
   }
 }

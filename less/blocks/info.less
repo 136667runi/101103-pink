@@ -1,12 +1,11 @@
 .info {
-  background-color: #f2f2f2;
+  // background: url("../img/bg-triangle-white.svg") no-repeat;
 }
 
 .info__wrapper {
   .container();
   box-sizing: border-box;
-  padding-top: 40px;
-  .outline();
+  padding: 40px 20px 0;
 }
 
 .info__slogan {
@@ -23,17 +22,17 @@
 }
 
 .info__slogan-item:last-child {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .info__item {
   text-align: center;
   line-height: 24px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
-.info__item:last-of-type {
-  margin-bottom: 45px;
+.info__item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .info__title {
@@ -47,59 +46,108 @@
   margin: 0;
 }
 
-.info__logo {}
+.info__logo {
+  overflow: hidden;
+  margin-top: -5px;
+}
 
 .info__logo img {
   width: 157px;
   height: 320px;
   display: block;
   margin: 0 auto;
+  transform: translateY(40px);
 }
 
 @media @tablet-widths {
+  .info__wrapper {
+    box-sizing: content-box;
+    padding-top: 45px;
+  }
+
   .info__slogan {
     width: 100%;
   }
+
   .info__slogan-item {
     font-size: 40px;
     line-height: 50px;
   }
+
   .info__slogan-item:last-of-type {
     width: 320px;
     margin: 0 auto;
   }
+
   .info__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
   }
+
   .info__item {
     width: 310px;
     align-self: flex-end;
   }
+
   .info__logo img {
     display: inline;
     vertical-align: top;
   }
+
   .info__logo {
     position: absolute;
     bottom: 0;
   }
+
 }
 
 @media @desktop-widths {
+  .info__wrapper {
+    padding: 0;
+    padding-top: 70px;
+  }
+
   .info__logo {
     display: none;
   }
+
   .info__wrapper {
     display: block;
   }
+
+  .info__slogan {
+    margin-bottom: 0;
+  }
+
+  .info__slogan-item {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .info__slogan-item:last-child {
+    width: 600px;
+  }
+
   .info__item {
     display: inline-block;
     vertical-align: top;
-    padding-top: 300px;
+    margin-top: 70px;
+    margin-bottom: 46px;
+    padding-top: 361px;
     box-sizing: border-box;
-    padding-left: 37px;
-    padding-right: 37px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
+
+  .info__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .info__text {
+    line-height: 30px;
+  }
+
 }
