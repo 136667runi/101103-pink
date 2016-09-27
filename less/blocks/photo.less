@@ -33,16 +33,32 @@
     padding-top: 92px;
     padding-bottom: 72px;
   }
+
   .photo-item__wrapper {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  .photo__item:not(.photo__item--panorama) {
+    margin-right: 20px;
+  }
+
+  .photo__item:nth-of-type(2n) {
+    margin-right: 0;
   }
 }
 
 @media @desktop-widths {
   .photo__slogan {
     width: 580px;
+  }
+
+  .photo__item:nth-of-type(2n) {
+    margin-right: 20px;
+  }
+
+  .photo__item:nth-of-type(3n) {
+    margin-right: 0;
   }
 }

@@ -57,16 +57,29 @@
   display: block;
   margin: 0 auto;
   transform: translateY(40px);
+  vertical-align: top;
 }
 
 @media @tablet-widths {
   .info__wrapper {
     box-sizing: content-box;
     padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info__slogan {
     width: 100%;
+    order: 1;
+  }
+
+  .info__logo {
+    order: 2;
+  }
+
+  .info__item-wrapper {
+    order: 3;
+    margin-left: auto;
   }
 
   .info__slogan-item {
@@ -79,25 +92,9 @@
     margin: 0 auto;
   }
 
-  .info__wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-
   .info__item {
     width: 310px;
     align-self: flex-end;
-  }
-
-  .info__logo img {
-    display: inline;
-    vertical-align: top;
-  }
-
-  .info__logo {
-    position: absolute;
-    bottom: 0;
   }
 
 }
