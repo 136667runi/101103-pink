@@ -1,0 +1,50 @@
+.effect {
+  display: none;
+}
+
+.effect__title {
+  margin: 0;
+}
+
+.effect__text {
+  margin: 0;
+}
+
+@media @tablet-widths {
+  .effect {
+    display: block;
+  }
+  .effect__wrapper {
+    .container();
+    .outline();
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    box-sizing: border-box;
+  }
+  .effect__text {
+    width: 310px;
+  }
+}
+
+@media @desktop-widths {
+  .effect__wrapper {
+    padding: 110px 50px 112px 370px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .effect__text {
+    width: 550px;
+    margin-bottom: 35px;
+  }
+
+  .effect__link {
+    color: #d22856;
+    text-decoration: underline;
+  }
+}

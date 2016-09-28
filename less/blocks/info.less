@@ -1,23 +1,150 @@
 .info {
-  .outline();
-  position: relative;
-  padding: 20px 24px 0 24px;
-  background: linear-gradient(173deg, white 0, white 34%, #f2f2f2 34%, #f2f2f2 100%);
+  // background: url("../img/bg-triangle-white.svg") no-repeat;
+}
 
-  &__slogan {
-    margin-bottom: 110px;
+.info__wrapper {
+  .container();
+  box-sizing: border-box;
+  padding: 40px 20px 0;
+}
+
+.info__slogan {
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+
+.info__slogan-item {
+  font-size: @body-font-size + 6;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+.info__slogan-item:last-child {
+  margin-top: 27px;
+}
+
+.info__item {
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.info__item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.info__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info__text {
+  margin: 0;
+}
+
+.info__logo {
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.info__logo img {
+  width: 157px;
+  height: 320px;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(40px);
+  vertical-align: top;
+}
+
+@media @tablet-widths {
+  .info__wrapper {
+    box-sizing: content-box;
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__slogan-item {
-    font-size: 1.714em;
-    font-weight: 300;
-    color: @body-font-color;
+  .info__slogan {
+    width: 100%;
+    order: 1;
+  }
+
+  .info__logo {
+    order: 2;
+  }
+
+  .info__item-wrapper {
+    order: 3;
+    margin-left: auto;
+  }
+
+  .info__slogan-item {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .info__slogan-item:last-of-type {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .info__item {
+    width: 310px;
+    align-self: flex-end;
+  }
+
+}
+
+@media @desktop-widths {
+  .info__wrapper {
+    padding: 0;
+    padding-top: 70px;
+  }
+
+  .info__logo {
+    display: none;
+  }
+
+  .info__wrapper {
+    display: block;
+  }
+
+  .info__slogan {
+    margin-bottom: 0;
+  }
+
+  .info__slogan-item {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .info__slogan-item:last-child {
+    width: 600px;
+  }
+
+  .info__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 70px;
+    margin-bottom: 46px;
+    padding-top: 361px;
+    box-sizing: border-box;
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  &__title {
-    margin: 0;
-    font-size: 1.286em;
+  .info__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
   }
+
+  .info__text {
+    line-height: 30px;
+  }
+
 }

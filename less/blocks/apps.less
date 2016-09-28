@@ -1,30 +1,114 @@
 .apps {
-  background-color: @apps-bg;
-  padding: 28px 20px 35px 20px;
-
-  &__text {
+  .container();
+  box-sizing: border-box;
+  padding: 28px 20px 30px;
   color: #ffffff;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.714em;
+}
+
+.apps_title {
+  display: none;
   margin: 0;
+}
+
+.apps__button {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.apps__text {
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.apps__icon {
+  font-size: 0;
+  margin-top: 29px;
+  padding-left: 35px;
+}
+
+.apps__icon-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+
+  &--ios {
+    width: 47px;
+    height: 56px;
+    background: url("../img/logo-apple.svg") no-repeat;
   }
 
-  &__button {
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("../img/logo-android.svg") no-repeat;
+  }
+
+  &--wp {
+    width: 44px;
+    height: 41px;
+    background: url("../img/logo-microsoft.svg") no-repeat;
+  }
+}
+
+@media @tablet-widths {
+  .apps {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apps_title {
     display: block;
-    width: 281px;
-    font-size: 1.286em;
-    color: #ffffff;
-    font-weight: 700;
-    line-height: 49px;
+    margin: 0 auto;
+    width: 200px;
     text-align: center;
-    border: 3px solid white;
-    border-radius: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 45px;
   }
 
-  &__icon-ios,
-  &__icon-android,
-  &__icon-wp {
-    font-size: 0;
+  .apps__button {
+    margin-top: 35px;
+  }
+
+  .apps__icon {
+    margin-top: 45px;
+  }
+
+  .apps__text {
+    margin-top: 35px;
+  }
+}
+
+@media @desktop-widths {
+  .apps_title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .apps__button {
+    margin-top: 50px;
+    font-size: 21px;
+  }
+
+  .apps__icon {
+    margin-top: 65px;
+    padding-left: 47px;
+  }
+
+  .apps__text {
+    margin-top: 55px;
   }
 }
