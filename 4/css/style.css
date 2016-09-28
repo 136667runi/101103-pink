@@ -500,7 +500,7 @@ ul {
     min-height: 729px;
     padding: 0;
     background: url("../img/iphone-hand-tablet.png") no-repeat 50% 100%, url("../img/bg-tablet.jpg") no-repeat 50% 0;
-    background-size: auto, 100% 100%;
+    background-size: auto, cover;
     justify-content: flex-start;
   }
   .page-header__nav--menu-open {
@@ -786,14 +786,25 @@ ul {
   display: block;
   margin: 0 auto;
   transform: translateY(40px);
+  vertical-align: top;
 }
 @media (min-width: 660px) {
   .info__wrapper {
     box-sizing: content-box;
     padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .info__slogan {
     width: 100%;
+    order: 1;
+  }
+  .info__logo {
+    order: 2;
+  }
+  .info__item-wrapper {
+    order: 3;
+    margin-left: auto;
   }
   .info__slogan-item {
     font-size: 40px;
@@ -803,22 +814,9 @@ ul {
     width: 320px;
     margin: 0 auto;
   }
-  .info__wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
   .info__item {
     width: 310px;
     align-self: flex-end;
-  }
-  .info__logo img {
-    display: inline;
-    vertical-align: top;
-  }
-  .info__logo {
-    position: absolute;
-    bottom: 0;
   }
 }
 @media (min-width: 960px) {
@@ -1204,7 +1202,6 @@ ul {
   background-size: cover;
 }
 #map {
-  width: 100%;
   height: 300px;
 }
 @media (min-width: 660px) {
@@ -1410,12 +1407,23 @@ ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+  .photo__item:not(.photo__item--panorama) {
+    margin-right: 20px;
+  }
+  .photo__item:nth-of-type(2n) {
+    margin-right: 0;
   }
 }
 @media (min-width: 960px) {
   .photo__slogan {
     width: 580px;
+  }
+  .photo__item:nth-of-type(2n) {
+    margin-right: 20px;
+  }
+  .photo__item:nth-of-type(3n) {
+    margin-right: 0;
   }
 }
 .user-review {
@@ -1655,6 +1663,9 @@ ul {
   padding: 0;
   border: none;
 }
+.form-contest__field-wrapper--name {
+  padding-bottom: 43px;
+}
 .form-contest__field-wrapper--achievements {
   background-color: #f2f2f2;
   padding-top: 39px;
@@ -1735,9 +1746,6 @@ ul {
   margin-top: 6px;
   margin-bottom: 18px;
   padding-left: 22px;
-}
-.form-contest input[type="text"]:last-child {
-  margin-bottom: 43px;
 }
 ::-webkit-input-placeholder {
   font-size: 18px;
