@@ -2,7 +2,7 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -18,17 +18,33 @@
 @media @tablet-widths {
   .upload__slogan {
     width: 450px;
-    padding-top: 70px;
+    padding-top: 45px;
     padding-bottom: 66px;
   }
+
   .upload__form {
     padding: 57px 13px 54px 0;
   }
+
 }
 
 @media @desktop-widths {
+  .upload__form {
+    width: auto;
+  }
+  
   .upload__slogan {
-    padding-top: 62px;
+    padding-top: 0;
     padding-bottom: 63px;
+  }
+
+  .upload__wrapper {
+    .container();
+    box-sizing: border-box;
+    padding: 57px 60px 57px 80px;
+  }
+
+  .upload__form {
+    padding: 0;
   }
 }

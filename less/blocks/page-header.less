@@ -19,7 +19,7 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 7px;
+  padding: 20px 20px 13px;
 }
 
 .page-header__menu {
@@ -62,11 +62,14 @@
   font-weight: 300;
   color: white;
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 85px;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 @media @tablet-widths {
+  .page-header {
+    background-size: cover;
+  }
 
   .page-header--main {
     min-height: 729px;
@@ -83,11 +86,8 @@
     }
   }
 
-  .page-header__wrapper {
-    height: 110px;
-  }
-
   .page-header__logo {
+    height: 110px;
     padding: 30px 0 43px;
   }
 
@@ -98,8 +98,8 @@
   .page-header__title {
     font-size: 50px;
     line-height: 55px;
-    padding-top: 80px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 140px;
   }
 
   .page-header__apps  {
@@ -135,12 +135,15 @@
       background: url("../img/iphone-hand-desktop.png") no-repeat 95% 100%,
                   url("../img/bg-desktop.jpg") no-repeat 50% 0;
     }
+
+    &--inner {
+      background: url("../img/bg-inner-desktop.jpg") no-repeat;
+    }
   }
 
   .page-header__logo {
     width: 150px;
     margin: 0;
-    padding: 0;
   }
 
   .page-header__wrapper {
@@ -151,8 +154,8 @@
   }
 
   .page-header__title {
-    padding-top: 72px;
-    padding-bottom: 110px;
+    padding-top: 69px;
+    padding-bottom: 106px;
   }
 
   .page-header__apps {
