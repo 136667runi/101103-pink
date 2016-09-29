@@ -62,8 +62,12 @@
   font-weight: 300;
   color: white;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 80px;
+  padding: 30px 25px 80px;
+  box-sizing: border-box;
+
+  &--form {
+    padding-bottom: 48px;
+  }
 }
 
 @media @tablet-widths {
@@ -100,6 +104,12 @@
     line-height: 55px;
     padding-top: 75px;
     padding-bottom: 140px;
+
+    &--form {
+      padding-top: 70px;
+      padding-bottom: 77px;
+      line-height: 60px;
+    }
   }
 
   .page-header__apps  {
@@ -154,8 +164,11 @@
   }
 
   .page-header__title {
-    padding-top: 69px;
-    padding-bottom: 106px;
+    padding: 62px 0 102px;
+
+    &--photo {
+      padding-bottom: 110px;
+    }
   }
 
   .page-header__apps {
