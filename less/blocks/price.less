@@ -71,8 +71,8 @@
 
 @media @tablet-widths {
   .price {
-    padding-top: 100px;
-    padding-bottom: 75px;
+    padding-top: 105px;
+    padding-bottom: 60px;
   }
 
   .price__toggles {
@@ -121,12 +121,14 @@
 
   .price__slide-text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
-    line-height: 45px;
+    line-height: 49px;
     padding-left: 17px;
     border-right: none;
+    background-color: #fff;
 
     &:first-of-type {
       border-top:  1px solid #e5e5e5;
@@ -147,7 +149,7 @@
 @media @desktop-widths {
   .price  {
     padding-bottom: 90px;
-    padding-top: 156px;
+    padding-top: 160px;
   }
 
   .price__slide {
@@ -155,8 +157,9 @@
   }
 
   .price__slide-text {
+    width: 235px;
     font-size: @body-font-size;
-    line-height: 61px;
+    line-height: 63px;
   }
 
   .price__slide-title {
