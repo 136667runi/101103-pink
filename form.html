@@ -38,7 +38,7 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <h1 class="page-header__title  page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main>
       <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
@@ -49,15 +49,15 @@
         <div class="form-contest__field-wrapper  form-contest__field-wrapper--name">
           <fieldset class="form-contest__field  form-contest__field--name">
             <div>
-              <label class="form-contest__title" for="surname">Фамилия:</label>
+              <label class="form-contest__title  form-contest__title--name" for="surname">Фамилия:</label>
               <input type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
             </div>
             <div>
-              <label class="form-contest__title" for="name">Имя:</label>
+              <label class="form-contest__title  form-contest__title--name" for="name">Имя:</label>
               <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
             </div>
             <div>
-              <label class="form-contest__title" for="second-name">Отчество:</label>
+              <label class="form-contest__title  form-contest__title--name" for="second-name">Отчество:</label>
               <input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
@@ -94,11 +94,11 @@
             <legend class="form-contest__title  form-contest__title--hide">Контактная информация</legend>
             <div>
               <div class="form-contest__desktop-wrapper">
-                <label class="form-contest__title  form-contest__title--phone" for="phone">Номерок телефончика</label>
+                <label class="form-contest__title  form-contest__title--phone" for="phone">Номер телефона</label>
                 <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required="">
               </div>
               <div class="form-contest__desktop-wrapper">
-                <label class="form-contest__title" for="email">адресок почты</label>
+                <label class="form-contest__title  form-contest__title--email" for="email">адресок почты</label>
                 <input type="email" id="email" name="email" placeholder="Введите почту" required="">
               </div>
             </div>
@@ -128,8 +128,8 @@
         </div>
 
         <div class="form-contest__field-wrapper  form-contest__field-wrapper--button">
-          <button class="form-contest__button" type="submit">Отправить</button>
-          <p class="form-contest__doc"><span>*</span> — обязательные поля</p>
+          <button class="form-contest__button" type="submit">Отправить форму</button>
+          <p class="form-contest__doc"><span>*</span> — обязательные <span class="form-contest__doc--hide">для заполнения</span> поля</p>
         </div>
       </form>
     </main>

@@ -37,7 +37,7 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Фотографии<br> пользователей</h1>
+      <h1 class="page-header__title  page-header__title--photo">Фотографии<br> пользователей</h1>
     </header>
     <main>
       <section class="photo">
@@ -174,7 +174,7 @@
               <img src="img/photo-7-mobile@1x.jpg" width="280" height="374">
             </div>
             <div class="form__panel-right">
-              <div class="form__toggles">
+              <!-- <div class="form__toggles">
                 <label class="form__toggle  form__toggle--crop  form__toggle--active" for="form-crop"></label>
                 <label class="form__toggle  form__toggle--fill" for="form-fill"></label>
                 <label class="form__toggle  form__toggle--contrast" for="form-contrast"></label>
@@ -183,8 +183,20 @@
                 <input class="form__input-crop" type="range" name="crop" id="form-crop" min="0" max="" step="" checked>
                 <input class="form__input-fill" type="range" name="fill" id="form-fill" min="0" max="" step="">
                 <input class="form__input-contrast" type="range" name="contrast" id="form-contrast" min="0" max="" step="">
+              </div> -->
+              <div class="form__toggles">
+                <label class="form__toggle  form__toggle--crop  form__toggle--active" for="form-crop"></label>
+                <input class="form__input-crop" type="range" name="crop" id="form-crop" min="0" max="" step="" checked>
               </div>
-              <div class="form__btn">
+              <div class="form__toggles">
+                <label class="form__toggle  form__toggle--fill" for="form-fill"></label>
+                <input class="form__input-fill" type="range" name="fill" id="form-fill" min="0" max="" step="">
+              </div>
+              <div class="form__toggles">
+                <label class="form__toggle  form__toggle--contrast" for="form-contrast"></label>
+                <input class="form__input-contrast" type="range" name="contrast" id="form-contrast" min="0" max="" step="">
+              </div>
+              <div class="form__button">
                 <button class="form__btn  form__btn--submit" type="submit">Запостить</button>
                 <button class="form__btn  form__btn--reset" type="reset">Отмена</button>
               </div>

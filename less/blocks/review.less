@@ -27,6 +27,7 @@
 .review__slide-post {
   display: none;
 }
+
 .review__toggles {
   position: absolute;
   bottom: 0;
@@ -35,22 +36,50 @@
 }
 
 @media @tablet-widths {
+  .review {
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+
+  .review__slides {
+    padding: 0;
+  }
+
   .review__slide {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .review__slide-post {
     display: block;
     font-size: 14px;
     font-weight: 400;
   }
+
+  .review__slide-text {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .review__slide-title {
+    font-size: @body-font-size + 2;
+  }
+
+  .review__toggles {
+    transform: translateX(-45%);
+  }
+
 }
 
 @media @desktop-widths {
-  .review {
-    padding-bottom: 0;
+  .review__toggles {
+    display: none;
   }
-  
+
+  .review {
+    padding: 0;
+  }
+
   .review__slides {
     padding: 0;
   }
@@ -69,10 +98,6 @@
 
   .review__slide-text {
     margin: 0;
-    margin-bottom: 35px;
-  }
-
-  .review__toggles {
-    display: none;
+    margin-bottom: 40px;
   }
 }

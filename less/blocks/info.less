@@ -31,7 +31,7 @@
   margin-bottom: 28px;
 }
 
-.info__item:nth-child(4) {
+.info__item:last-child {
   margin-bottom: 0;
 }
 
@@ -71,6 +71,7 @@
   .info__slogan {
     width: 100%;
     order: 1;
+    margin-bottom: 45px;
   }
 
   .info__logo {
@@ -80,6 +81,8 @@
   .info__item-wrapper {
     order: 3;
     margin-left: auto;
+    padding-top: 73px;
+    padding-bottom: 10px;
   }
 
   .info__slogan-item {
@@ -88,13 +91,24 @@
   }
 
   .info__slogan-item:last-of-type {
-    width: 320px;
+    width: 400px;
     margin: 0 auto;
   }
 
   .info__item {
     width: 310px;
+    font-size: 14px;
+    text-align: left;
     align-self: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .info__logo {
+    img {
+      width: 268px;
+      height: 482px;
+      transform: translateY(0);
+    }
   }
 
 }
@@ -114,7 +128,7 @@
   }
 
   .info__slogan {
-    margin-bottom: 0;
+    margin-bottom: 73px;
   }
 
   .info__slogan-item {
@@ -126,15 +140,19 @@
     width: 600px;
   }
 
+  .info__item-wrapper {
+    .outline();
+    padding-top: 0;
+  }
+
   .info__item {
     display: inline-block;
     vertical-align: top;
-    margin-top: 70px;
-    margin-bottom: 46px;
     padding-top: 361px;
     box-sizing: border-box;
     padding-left: 35px;
     padding-right: 35px;
+    text-align: center;
   }
 
   .info__title {
@@ -145,6 +163,7 @@
 
   .info__text {
     line-height: 30px;
+    font-size: @body-font-size;
   }
 
 }

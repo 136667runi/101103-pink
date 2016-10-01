@@ -53,9 +53,7 @@
   line-height: 63px;
   color: #283645;
   text-transform: uppercase;
-  border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
+  outline: 1px solid #e5e5e5;
 
   &--include {
     background: url("../img/icon-yes.svg") no-repeat 90% 50%;
@@ -72,7 +70,12 @@
 }
 
 @media @tablet-widths {
-  .slider__toggles {
+  .price {
+    padding-top: 105px;
+    padding-bottom: 60px;
+  }
+
+  .price__toggles {
     display: none;
   }
 
@@ -96,7 +99,7 @@
     border: none;
 
     &:last-of-type .price__slide-text {
-      border-right: 2px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5;
     }
   }
 
@@ -111,17 +114,24 @@
     margin-top: -3px;
   }
 
+  .price__slide-title--hit {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
   .price__slide-text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
     line-height: 49px;
     padding-left: 17px;
     border-right: none;
+    background-color: #fff;
 
     &:first-of-type {
-      border-top:  2px solid #e5e5e5;
+      border-top:  1px solid #e5e5e5;
     }
 
     &--hidden {
@@ -139,7 +149,7 @@
 @media @desktop-widths {
   .price  {
     padding-bottom: 90px;
-    padding-top: 156px;
+    padding-top: 160px;
   }
 
   .price__slide {
@@ -147,8 +157,9 @@
   }
 
   .price__slide-text {
+    width: 235px;
     font-size: @body-font-size;
-    line-height: 61px;
+    line-height: 63px;
   }
 
   .price__slide-title {
