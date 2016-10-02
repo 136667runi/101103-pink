@@ -15,7 +15,13 @@
         <div class="page-header__wrapper">
           <ul class="page-header__logo">
             <li>
-              <a href="index.html"><img class="page-header__img" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Pink"></a>
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="page-header__img" src="img/logo-pink-white-mobile.svg" alt="Pink">
+                </picture>
+              </a>
             </li>
             <li>
               <button class="page-header__menu" type="button"></button>
@@ -207,7 +213,11 @@
     </main>
     <footer class="page-footer  page-footer--inner">
       <div class="page-footer__item">
-        <img src="img/logo-pink-blue-mobile.svg" width="147px" height="40px">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+          <img src="img/logo-pink-blue-mobile.svg">
+        </picture>
       </div>
       <div class="page-footer__item  social">
         <div class="social__item  social__item--twitter">
