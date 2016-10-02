@@ -51,9 +51,13 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <article class="photo__item photo__item--panorama">
-          <div class="photo__item-img  photo__item-img--panorama">
+          <div class="photo__item-panorama">
             <a href="#">
-              <img src="img/panorama-mobile@1x.jpg" width="" height="" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
           </div>
           <div class="photo__item-review user-review user-review--panorama">
@@ -71,13 +75,17 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-1-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="photo-1-mobile@2x.jpg 2x" alt="Фото от Левон">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
               <h3 class="user-review__title">Левон
-              <span class="user-review__time">(5 часов назад)</span>
-            </h3>
+                <span class="user-review__time">(5 часов назад)</span>
+              </h3>
               <p class="user-review__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="user-review__like">
                 <a class="user-review__like-action" href="#">like</a>
@@ -88,13 +96,17 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-2-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg.jpg 1px, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="photo-2-mobile@2x.jpg 2x" alt="Фото от Антона">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
               <h3 class="user-review__title">Антон
-              <span class="user-review__time">(5 часов назад)</span>
-            </h3>
+                <span class="user-review__time">(5 часов назад)</span>
+              </h3>
               <p class="user-review__text">Соседи будут рады!</p>
               <div class="user-review__like">
                 <a class="user-review__like-action" href="#">like</a>
@@ -105,13 +117,17 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-3-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="photo-3-mobile@2x.jpg 2x" alt="Фото от Бориса">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
               <h3 class="user-review__title">Борис
-              <span class="user-review__time">(20 часов назад)</span>
-            </h3>
+                <span class="user-review__time">(20 часов назад)</span>
+              </h3>
               <p class="user-review__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="user-review__like">
                 <a class="user-review__like-action" href="#">like</a>
@@ -122,13 +138,17 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-4-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото от Сергей">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
               <h3 class="user-review__title">Сергей
-              <span class="user-review__time">(25 часов назад)</span>
-            </h3>
+                <span class="user-review__time">(25 часов назад)</span>
+              </h3>
               <p class="user-review__text">Самая кубанская в мире!</p>
               <div class="user-review__like">
                 <a class="user-review__like-action" href="#">like</a>
@@ -139,13 +159,17 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-5-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото от Максим">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
               <h3 class="user-review__title">Максим
-              <span class="user-review__time">(40 часов назад)</span>
-            </h3>
+                <span class="user-review__time">(40 часов назад)</span>
+              </h3>
               <p class="user-review__text">Где снег-то?</p>
               <div class="user-review__like">
                 <a class="user-review__like-action" href="#">like</a>
@@ -156,7 +180,11 @@
           <article class="photo__item">
             <div class="photo__item-img">
               <a href="#">
-                <img src="img/photo-6-mobile@1x.jpg" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img src="img/photo-6-mobile@1x.jpg" srcset="photo-6-mobile@2x.jpg 2x" alt="Фото от Надежда">
+                </picture>
               </a>
             </div>
             <div class="photo__item-review user-review">
@@ -177,7 +205,11 @@
         <div class="upload__wrapper">
           <form class="upload__form form" action="index.html" method="post">
             <div class="form__img">
-              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile@1x.jpg" srcset="photo-7-mobile@2x.jpg 2x" alt="Загрузите свою работу">
+              </picture>
             </div>
             <div class="form__panel-right">
               <!-- <div class="form__toggles">

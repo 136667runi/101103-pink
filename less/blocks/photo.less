@@ -13,13 +13,15 @@
 
 .photo__item-img img {
   vertical-align: top;
+  width: 280px;
+  height: 180px;
 }
 
-.photo__item-img {
-  &--panorama img {
-    width: 100%;
-    height: 137px;
-  }
+.photo__item-panorama img {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 137px;
 }
 
 .photo-item__wrapper {
@@ -55,16 +57,14 @@
     }
   }
 
-  .photo__item-img {
-    img {
-      width: 300px;
-      height: 300px;
-    }
+  .photo__item-img img {
+    width: 300px;
+    height: 300px;
+  }
 
-    &--panorama img {
-      width: 100%;
-      height: 509px;
-    }
+  .photo__item-panorama img {
+    width: 700px;
+    height: 509px;
   }
 
 }
@@ -87,12 +87,12 @@
     img {
       height: 400px;
     }
+  }
 
-    &--panorama img {
-      display: block;
-      max-width: 1200px;
+  .photo__item-panorama {
+    img {
+      width: 1200px;
       height: 506px;
-      margin: 0 auto;
     }
   }
 
