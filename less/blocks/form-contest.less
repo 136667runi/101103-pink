@@ -155,8 +155,33 @@
   top: -5px;
 }
 
-.form-contest__control--radio::before {
+.form-contest__control--radio {
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.form-contest input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  display: block;
+  width: 22px;
+  height: 16px;
+  background: url("../img/icon-yes-form.svg") no-repeat;
+}
+
+.form-contest input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  display: block;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  background-color: #d22856;
 }
 
 .form-contest input[type="tel"],

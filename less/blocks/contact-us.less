@@ -23,9 +23,22 @@
 }
 
 .contact-us__map {
+  position: relative;
   width: 100%;
-  background: url("../img/map-mobile.jpg") no-repeat 50% 50%;
-  background-size: cover;
+  height: 203px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
+  }
 }
 
 #map {
@@ -61,6 +74,11 @@
     height: 376px;
     background: url("../img/map-tablet.png") no-repeat;
     background-size: cover;
+
+    &::after {
+      border-width: 75px 350px 0 350px;
+      border-color: #ffffff transparent transparent transparent;
+    }
   }
 
   #map {
@@ -116,6 +134,11 @@
     height: 510px;
     background: url("../img/map-desktop.png") no-repeat 50% 50%;
     background-size: cover;
+
+    &::after {
+      border-width: 103px 600px 0 600px;
+      border-color: #ffffff transparent transparent transparent;
+    }
   }
 
   #map {

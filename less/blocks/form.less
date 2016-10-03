@@ -19,27 +19,34 @@
   width: 44px;
   height: 44px;
   display: block;
-  opacity: 0.3;
+
+  svg {
+    fill: #283645;
+    opacity: 0.3;
+  }
 
   &--crop {
-    background: url("../img/icon-editor-crop.svg") no-repeat;
     margin-left: 36px;
   }
+
   &--fill {
     width: 48px;
     height: 43px;
-    background: url("../img/icon-editor-fill.svg") no-repeat;
     margin-left: 115px;
   }
+
   &--contrast {
     width: 32px;
     height: 32px;
-    background: url("../img/icon-editor-contrast.svg") no-repeat;
     margin-left: 205px;
     margin-top: 5px;
   }
-  &--active {
 
+  &--active {
+    svg {
+      fill: #d22856;
+      opacity: 1;
+    }
   }
 }
 
@@ -137,23 +144,37 @@
 
   .form__toggle {
     margin: 0;
+    width: auto;
+    height: auto;
 
-
-    &--crop {
-      background: url("../img/icon-editor-crop-tablet.svg") no-repeat;
-      width: 22px;
-      height: 22px;
+    svg {
+      fill: #d22856;
       opacity: 1;
     }
 
+    &--crop {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
     &--fill {
-      width: 24px;
-      height: 22px;
+      svg {
+        width: 24px;
+        height: 22px;
+      }
     }
 
     &--contrast {
-      width: 16px;
-      height: 16px;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      svg path {
+        fill: #d22856;
+      }
     }
   }
 
@@ -186,6 +207,31 @@
 
   .form__toggles {
     width: 100%;
+  }
+
+  .form__toggle {
+
+    &--crop {
+      svg {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &--fill {
+      svg {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      svg {
+        width: 32px;
+        height: 32px;
+        margin-left: 5px;
+      }
+    }
   }
 
   .form input[type="range"] {
