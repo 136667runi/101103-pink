@@ -11,34 +11,39 @@
 .form__toggles {
   position: absolute;
   top: 0;
-  padding-top: 42px;
-  padding-bottom: 34px;
+  margin-top: 42px;
+  margin-bottom: 34px;
 }
 
 .form__toggle {
   width: 44px;
   height: 44px;
   display: block;
+  position: absolute;
 
   svg {
     fill: #283645;
     opacity: 0.3;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &--crop {
-    margin-left: 36px;
+    left: 36px;
   }
 
   &--fill {
     width: 48px;
     height: 43px;
-    margin-left: 115px;
+    left: 115px;
   }
 
   &--contrast {
     width: 32px;
     height: 32px;
-    margin-left: 205px;
+    left: 205px;
     margin-top: 5px;
   }
 
@@ -46,6 +51,10 @@
     svg {
       fill: #d22856;
       opacity: 1;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -55,7 +64,7 @@
   width: 240px;
   height: 2px;
   margin-left: 18px;
-  margin-top: 39px;
+  margin-top: 80px;
   background-color: #000000;
 }
 
@@ -71,6 +80,11 @@
   border-radius: 50%;
   background-color: #f2f2f2;
   border: 2px solid #d22856;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .form__btn {
@@ -89,10 +103,35 @@
     color: #d22856;
     margin-top: 200px;
     margin-bottom: 12px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+    }
   }
+
   &--reset {
     border: 3px solid #283645;
     opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: #283645;
+      opacity: 0.3;
+
+      span {
+        color: #ffffff;
+      }
+    }
   }
 }
 
@@ -146,6 +185,7 @@
     margin: 0;
     width: auto;
     height: auto;
+    position: static;
 
     svg {
       fill: #d22856;

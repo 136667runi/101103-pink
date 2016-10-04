@@ -62,8 +62,24 @@
   outline: none;
   cursor: pointer;
 
+  &:hover {
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--open {
     background: url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
+
+    &:hover {
+      background: url("../img/icon-menu-cross-hover.svg") no-repeat 50% 50%;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -220,7 +236,7 @@
       fill: white;
     }
   }
-  
+
   .pink-star {
     fill: #D22856;
   }

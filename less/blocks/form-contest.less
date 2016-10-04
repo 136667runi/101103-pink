@@ -100,6 +100,14 @@
   margin-top: 5px;
   margin-bottom: 15px;
   padding-left: 22px;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #d22856;
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -124,11 +132,6 @@
   font-size: @body-font-size;
   color: @body-font-color;
   opacity: 1;
-}
-
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .form-contest input[type="checkbox"],
@@ -184,6 +187,14 @@
   background-color: #d22856;
 }
 
+.form-contest__control:hover::before {
+  border: 2px solid #283645;
+}
+
+.form-contest__control:active::before {
+  border: 2px solid #d22856;
+}
+
 .form-contest input[type="tel"],
 .form-contest input[type="email"] {
   box-sizing: border-box;
@@ -196,6 +207,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #d22856;
+  }
 }
 
 .form-contest__comment {
@@ -206,6 +225,14 @@
   border: 2px solid #e5e5e5;
   overflow: scroll;
   padding: 17px 21px;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #d22856;
+  }
 }
 
 .form-contest__button {
@@ -221,6 +248,20 @@
   color: white;
   background-color: #2aab6d;
   border-radius: 3px;
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
 }
 
 .form-contest__doc {
