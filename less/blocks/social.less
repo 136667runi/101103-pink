@@ -14,6 +14,16 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
   font-size: 0;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
 
   &--twitter {
     background: url("../img/icon-twitter.svg") no-repeat 50% 50%;

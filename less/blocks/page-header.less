@@ -30,7 +30,27 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 13px;
+  padding: 22px 20px 13px;
+}
+
+.page-header__logo-img {
+  display: none;
+
+  &--mobile {
+    display: block;
+    width: 75px;
+    height: 22px;
+    fill: #ffffff;
+  }
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu {
@@ -106,6 +126,20 @@
     padding: 30px 0 43px;
   }
 
+  .page-header__logo-img {
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      width: 147px;
+      height: 40px;
+      fill: white;
+    }
+  }
+
   .page-header__menu {
     margin-top: 12px;
   }
@@ -136,6 +170,7 @@
       bottom: 112px;
     }
   }
+
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
@@ -172,6 +207,24 @@
     margin: 0;
   }
 
+  .page-header__logo-img {
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      width: 147px;
+      height: 40px;
+      fill: white;
+    }
+  }
+  
+  .pink-star {
+    fill: #D22856;
+  }
+
   .page-header__wrapper {
     .container();
     display: flex;
@@ -190,6 +243,13 @@
   .page-header__apps {
     margin-top: 110px;
   }
+
+  .page-header__nav {
+    &--menu-open {
+      top: 0;
+    }
+  }
+
 }
 
 @media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {

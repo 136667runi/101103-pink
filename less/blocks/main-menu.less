@@ -29,14 +29,40 @@
     flex-grow: 1;
     justify-content: flex-end;
   }
+
   .main-menu__item {
     margin-left: 80px;
     background-color: transparent;
     box-shadow: none;
+
+    &--active {
+        border-bottom: 2px solid #ffffff;
+        cursor: default;
+
+        &:hover {
+          border-bottom: 2px solid #d22856;
+        }
+
+        &:active {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
   }
+
   .main-menu__item a {
     display: inline;
     font-weight: 400;
     text-transform: none;
+    line-height: 45px;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
   }
 }

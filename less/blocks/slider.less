@@ -12,16 +12,26 @@
   background-color: #283645;
   margin-right: 15px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 #btn-1:checked ~ .slider__toggles .slider__toggle[for="btn-1"] {
   background-color: white;
   border: 3px solid #283645;
   opacity: 1;
+  cursor: default;
 }
 
 #price-btn-2 ~ .slider__toggles .slider__toggle[for="price-btn-2"] {
   background-color: white;
   border: 3px solid #283645;
   opacity: 1;
+  cursor: default;
 }
