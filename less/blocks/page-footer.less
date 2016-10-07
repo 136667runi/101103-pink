@@ -18,6 +18,29 @@
   }
 }
 
+.page-footer__logo-img {
+  display: none;
+
+  &--tablet {
+    display: block;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+}
+
+.logo-footer-tablet {
+  .pink-glass {
+    fill:#d22856;
+  }
+}
+
 .page-footer__item:nth-of-type(3) {
   font-size: 14px;
   font-weight: 400;
@@ -26,7 +49,6 @@
 
     span {
       display: inline-block;
-      vertical-align: middle;
     }
 
     a {
@@ -37,6 +59,14 @@
       height: 34px;
       background: url("../img/logo-htmlacademy.svg") no-repeat;
       margin-left: 15px;
+
+      &:hover {
+        background: url("../img/logo-htmlacademy-hover.svg") no-repeat;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 }
 
@@ -62,6 +92,31 @@
     }
   }
 
+  .page-footer__logo-img {
+
+    &--tablet {
+      display: block;
+      width: 147px;
+      height: 40px;
+      margin-top: -20px;
+
+      &:hover {
+        fill: #d22856;
+      }
+
+      &:active {
+        fill: #283645;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .logo-footer-tablet {
+    .pink-glass {
+      fill:#d22856;
+    }
+  }
+
 }
 
 @media @desktop-widths {
@@ -79,6 +134,42 @@
   .page-footer__item:nth-of-type(3) {
     span {
       font-size: 18px;
+    }
+  }
+
+  .page-footer__logo-img {
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      width: 147px;
+      height: 40px;
+
+      &:hover {
+        fill: #d22856;
+      }
+
+      &:active {
+        fill: #283645;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .logo-footer-desktop {
+    .pink-glass {
+      fill: #d22856;
+    }
+
+    .pink-star {
+      fill: black;
+
+      &--text {
+        fill: #d22856;
+      }
     }
   }
 

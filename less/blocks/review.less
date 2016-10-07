@@ -81,11 +81,34 @@
   }
 
   .review__slides {
-    padding: 0;
-  }
-
-  .review__slide {
+    position: relative;
     padding: 185px 130px 30px;
+    background: url("../img/icon-quotes.svg") no-repeat 50% 72px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 213px;
+      display: block;
+      width: 22px;
+      height: 41px;
+      background: url("../img/icon-review-arrow-left.svg") no-repeat;
+      opacity: 0.3;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 213px;
+      width: 22px;
+      height: 41px;
+      background: url("../img/icon-review-arrow-right.svg") no-repeat;
+      opacity: 0.3;
+      cursor: pointer;
+    }
   }
 
   .review__slide-title {

@@ -17,11 +17,35 @@
 
   .effect__wrapper {
     .container();
-    .outline();
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 100px 10px 80px 310px;
+    background: url("../img/icon-timer-tablet.svg") no-repeat 0 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 114px;
+      left: 19px;
+      width: 202px;
+      height: 202px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 15px solid #d22856;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 195px;
+      left: 66px;
+      font-size: 96px;
+      font-weight: 700;
+      color: #d22856;
+    }
   }
 
   .effect__title {
@@ -41,6 +65,7 @@
     font-size: @body-font-size - 4;
     line-height: 24px;
     text-decoration: underline;
+    color: #d22856;
   }
 }
 
@@ -51,6 +76,21 @@
 
   .effect__wrapper {
     padding: 115px 50px 112px 370px;
+    background: url("../img/icon-timer.svg") no-repeat 0 27%;
+
+    &::before {
+      width: 253px;
+      height: 253px;
+      border: 15px solid #d22856;
+      top: 95px;
+      left: 22px;
+    }
+
+    &::after {
+      font-size: 120px;
+      top: 196px;
+      left: 80px;
+    }
   }
 
   .effect__title {

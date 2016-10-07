@@ -1,5 +1,5 @@
 .info {
-  // background: url("../img/bg-triangle-white.svg") no-repeat;
+  background: linear-gradient(174deg, white 0, white 24.5%, #f2f2f2 24.5%, #f2f2f2 100%);
 }
 
 .info__wrapper {
@@ -10,8 +10,7 @@
 
 .info__slogan {
   width: 210px;
-  margin: 0 auto;
-  margin-bottom: 110px;
+  margin: 0 auto 110px;
 }
 
 .info__slogan-item {
@@ -59,8 +58,11 @@
   transform: translateY(40px);
   vertical-align: top;
 }
-
 @media @tablet-widths {
+  .info {
+    background: linear-gradient(176deg, white 0, white 37.5%, #f2f2f2 37.5%, #f2f2f2 100%);
+  }
+
   .info__wrapper {
     box-sizing: content-box;
     padding-top: 45px;
@@ -110,13 +112,14 @@
       transform: translateY(0);
     }
   }
-
 }
-
 @media @desktop-widths {
+  .info {
+    background: linear-gradient(176deg, white 0, white 41%, #f2f2f2 41%, #f2f2f2 100%);
+  }
+
   .info__wrapper {
-    padding: 0;
-    padding-top: 70px;
+    padding: 70px 0 0;
   }
 
   .info__logo {
@@ -141,7 +144,6 @@
   }
 
   .info__item-wrapper {
-    .outline();
     padding-top: 0;
   }
 
@@ -153,6 +155,18 @@
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;
+
+    &:nth-of-type(1) {
+      background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat 50% 0;
+    }
+
+    &:nth-of-type(2) {
+      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat 50% 0;
+    }
+
+    &:nth-of-type(3) {
+      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat 50% 0;
+    }
   }
 
   .info__title {
@@ -165,5 +179,22 @@
     line-height: 30px;
     font-size: @body-font-size;
   }
+}
+@media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .info__item {
+    &:nth-of-type(1) {
+      background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat 50% 0;
+      background-size: 292px 302px;
+    }
 
+    &:nth-of-type(2) {
+      background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat 50% 0;
+      background-size: 292px 302px;
+    }
+
+    &:nth-of-type(3) {
+      background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat 50% 0;
+      background-size: 292px 302px;
+    }
+  }
 }

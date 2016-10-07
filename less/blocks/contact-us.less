@@ -19,13 +19,38 @@
 .contact-us__a-red {
   font-size: 24px;
   font-weight: 300;
-  color: #d22856
+  color: #d22856;
+
+  &--mail {
+    &:hover {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.3;
+      text-decoration: none;
+    }
+  }
 }
 
 .contact-us__map {
+  position: relative;
   width: 100%;
-  background: url("../img/map-mobile.jpg") no-repeat 50% 50%;
-  background-size: cover;
+  height: 203px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 160px 0 160px;
+    border-color: #ffffff transparent transparent transparent;
+  }
 }
 
 #map {
@@ -61,6 +86,11 @@
     height: 376px;
     background: url("../img/map-tablet.png") no-repeat;
     background-size: cover;
+
+    &::after {
+      border-width: 75px 350px 0 350px;
+      border-color: #ffffff transparent transparent transparent;
+    }
   }
 
   #map {
@@ -116,6 +146,16 @@
     height: 510px;
     background: url("../img/map-desktop.png") no-repeat 50% 50%;
     background-size: cover;
+
+    &::after {
+      border-width: 0;
+      border-color: transparent;
+      width: 100%;
+      height: 123px;
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 50%;
+      background-size: auto 123px;
+      // position: absolute;
+    }
   }
 
   #map {
