@@ -2,7 +2,7 @@
   display: block;
   .container();
   box-sizing: border-box;
-  padding: 46px 20px 35px;
+  padding: 46px 20px 40px;
   text-align: center;
 
   &--hidden {
@@ -18,7 +18,7 @@
 .form-contest__field-wrapper {
 
   &--name {
-    padding-bottom: 30px;
+    padding-bottom: 18px;
   }
 
   &--achievements {
@@ -92,13 +92,19 @@
   }
 }
 
+.form-contest__field--name div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .form-contest input[type="text"] {
   box-sizing: border-box;
   width: 280px;
   height: 63px;
   border: 2px solid #e5e5e5;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px;
   padding-left: 22px;
 
   &:hover {
@@ -349,7 +355,7 @@
 
 @media @tablet-widths {
   .form-contest__slogan {
-    padding: 94px 60px 68px;
+    padding: 94px 60px 60px;
     order: 1;
 
     &--hidden {
@@ -367,7 +373,7 @@
 
     &--name {
       order: 2;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       padding-bottom: 0;
     }
 
@@ -478,6 +484,7 @@
 
   .form-contest__field--name div {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
 
     .form-contest__title {
@@ -486,6 +493,7 @@
 
     input[type="text"] {
       flex-grow: 1;
+      margin-top: 5px;
       margin-bottom: 45px;
     }
   }
@@ -667,7 +675,7 @@
   .form-contest__control {
 
     &--checkbox {
-      width: 270px;
+      width: 260px;
       box-sizing: border-box;
       margin-bottom: 54px;
     }

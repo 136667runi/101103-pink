@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.review__slide {
-
-}
-
 .review__slide:nth-child(n + 2) {
   display: none;
 }
@@ -108,6 +104,16 @@
       background: url("../img/icon-review-arrow-right.svg") no-repeat;
       opacity: 0.3;
       cursor: pointer;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 0.6;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.1;
     }
   }
 
