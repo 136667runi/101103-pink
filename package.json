@@ -4,26 +4,28 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "author": "Денис Новиков",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/101103-pink.git"
-  },
-  "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/101103-pink/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-adaptive/101103-pink",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-less": "1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-csscomb": "^3.1.1",
     "grunt-postcss": "0.8.0",
-    "@htmlacademy/editorconfig-cli": "0.0.7"
+    "grunt-svgmin": "^4.0.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "editorconfig-cli": [
