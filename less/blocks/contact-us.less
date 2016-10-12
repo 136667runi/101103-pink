@@ -14,6 +14,10 @@
 .contact-us__contacts-text {
   font-size: 18px;
   font-weight: 700;
+
+  &:first-of-type {
+    margin-top: 27px;
+  }
 }
 
 .contact-us__a-red {
@@ -38,6 +42,8 @@
   position: relative;
   width: 100%;
   height: 203px;
+  background: url("../img/map-mobile.jpg") no-repeat;
+  background-color: #eae6dd;
 
   &::after {
     content: "";
@@ -77,6 +83,10 @@
     vertical-align: top;
     margin: 0;
 
+    &:first-of-type {
+      margin-top: 0;
+    }
+
     &:last-of-type {
       margin-top: 40px;
     }
@@ -110,7 +120,7 @@
   .contact-us__contacts-title {
     padding-left: 230px;
     padding-right: 230px;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
     font-size: 50px;
     line-height: 60px;
     order: 1;
