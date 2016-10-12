@@ -180,7 +180,6 @@ module.exports = function(grunt) {
     "cssmin",
     "uglify",
     "symbols",
-    "imagemin",
     "htmlmin"
   ])
 };
