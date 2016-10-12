@@ -179,6 +179,7 @@ module.exports = function(grunt) {
     "csscomb",
     "cssmin",
     "uglify",
+    "imagemin",
     "symbols",
     "htmlmin"
   ])
